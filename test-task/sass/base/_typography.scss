@@ -1,6 +1,6 @@
 .page {
   font-family: $main-font;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   font-weight: 400;
   line-height: 1.21;
   color: $main-text;
@@ -9,6 +9,9 @@
 .title {
   &--primary {
     font-size: 4.8rem;
+    font-weight: 400;
+    white-space: pre-line;
+    max-width: 362px;
   }
 }
 
@@ -23,6 +26,7 @@
 
   &--uppercase {
     text-transform: uppercase;
+    letter-spacing: 0.05em
   }
 }
 

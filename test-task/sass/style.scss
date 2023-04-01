@@ -7,10 +7,12 @@
 @import "./base/typography";
 @import "./base/helpers";
 
+@import "./components/circle";
 @import "./components/logo";
 @import "./components/social-media";
 @import "./components/button";
 
 @import "./layouts/header";
+@import "./layouts/main";
 @import "./layouts/consultation";
 @import "./layouts/footer";

@@ -2,4 +2,6 @@
   max-width: $max-desktop;
   margin: 0 auto;
   padding: 0 $desktop-padding-x;
+
+  overflow: hidden;
 }

@@ -1,6 +1,7 @@
 *,
 *::before,
-*::after {
+*::after,
+h1 {
   margin: 0;
   padding: 0;
 
@@ -10,7 +11,15 @@
 html {
   font-size: 10px;
   scroll-behavior: smooth;
-  background-color: $main-background; 
+}
+
+.page {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 1fr auto;
+  min-height: 100vh;
+
+  background-color: $main-background;
 }
 
 .list {
@@ -33,10 +42,18 @@ html {
   &:hover .icon {
     fill: $hover-main-color;
   }
+
+  &--middle {
+    font-weight: 500;
+  }
 }
 
 .icon {
   fill: $main-text;
 
   transition: $transition;
+}
+
+.address {
+  font-style: normal;
 }
