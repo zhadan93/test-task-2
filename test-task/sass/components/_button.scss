@@ -1,0 +1,14 @@
+.btn {
+  padding: $btn-padding-x $btn-padding-y;
+
+  color: $main-text;
+  background-color: $btn-color;
+  border: none;
+
+  cursor: pointer;
+  transition: $transition;
+
+  &:hover {
+    background-color: $hover-btn-color;
+  }
+}

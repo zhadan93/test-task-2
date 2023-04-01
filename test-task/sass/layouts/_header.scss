@@ -1,0 +1,27 @@
+.header {
+  padding: 46px 0;
+
+  &__container {
+    display: flex;
+    padding-top: 15px;
+  }
+
+  &__logo {
+    margin-top: -2px;
+    margin-right: 52px;
+  }
+
+  .nav {
+    &__list {
+      display: flex;
+      gap: 30px;
+      justify-content: space-between;
+    }
+  }
+
+  &__address {
+    display: flex;
+    gap: 47px;
+    margin-left: auto;
+  }
+}

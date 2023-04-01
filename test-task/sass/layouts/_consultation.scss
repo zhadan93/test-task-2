@@ -1,0 +1,35 @@
+.consultation {
+  display: flex;
+  justify-content: space-between;
+
+  &__header {
+    max-width: 362px;
+
+    white-space: pre-line;
+  }
+
+  &__header-paragraph {
+    max-width: 275px;
+    font-family: $secondary-font;
+  }
+
+  &__gifts {
+    max-width: 300px;
+    text-align: right;
+  }
+  &__gifts-paragraph {
+    font-weight: 700;
+  }
+
+  &__gift-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+
+  &__gift-description {
+    display: block;
+    font-family: $secondary-font;
+    font-size: 1.6rem;
+  }
+}

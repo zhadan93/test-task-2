@@ -1,0 +1,63 @@
+.footer {
+  &__container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__name {
+    display: block;
+    margin-bottom: 20px;
+
+    color: $footer-name;
+    font-size: 1.4rem;
+    font-weight: 700;
+    line-height: 1.21;
+  }
+  
+  &__list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    margin-right: 98px;
+  }
+
+  &__link {
+    font-size: 1.6rem;
+    line-height: 1.21;
+  }
+
+  &__menu-list {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    column-gap: 52px;
+    row-gap: 10px;
+  }
+
+  &__contacts {
+    margin-left: auto;
+    text-align: right;
+  }
+
+  &__address {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+  }
+
+  &__social-media {
+    gap: 10px;
+    justify-content: flex-end;
+  }
+
+  .privacy-policy {
+    width: 100%;
+
+    font-family: $secondary-font;
+    font-size: 1.2rem;
+    text-align: right;
+
+    &__link {
+      text-decoration: underline;
+    }
+  }
+}

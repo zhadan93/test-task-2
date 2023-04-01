@@ -8,46 +8,46 @@
   <link rel="shortcut icon" type="image/png" href="./favicon.png">
   <link rel="stylesheet" href="./style.css">
 </head>
-<body>
+<body class="page">
   <header class="header">
-    <div class="container">
-      <div class="logo">
-        <a class="logo__link" href="#">
-          <svg class="icon logo">
+    <div class="container header__container">
+      <div class="logo header__logo">
+        <a class="link logo__link" href="#">
+          <svg class="icon logo__icon">
             <use href="./assets/svg/sprite.svg#logo"></use>
           </svg>
-          <span class="logo__description">крупный интегратор CRM в России и ещё 8 странах</span>
+          крупный интегратор CRM в России и ещё 8 странах
         </a>
       </div>
       <nav class="nav">
-        <ul class="nav__list">
-          <li class="item nav__item"><a class="link" href="#">Услуги</a></li>
-          <li class="item nav__item"><a class="link" href="#">Виджеты</a></li>
-          <li class="item nav__item"><a class="link" href="#">Интеграции</a></li>
-          <li class="item nav__item"><a class="link" href="#">Кейсы</a></li>
-          <li class="item nav__item"><a class="link" href="#">Сертификаты</a></li>
+        <ul class="list nav__list">
+          <li><a class="link" href="#">Услуги</a></li>
+          <li><a class="link" href="#">Виджеты</a></li>
+          <li><a class="link" href="#">Интеграции</a></li>
+          <li><a class="link" href="#">Кейсы</a></li>
+          <li><a class="link" href="#">Сертификаты</a></li>
         </ul>
       </nav>
-      <address class="address address__contacts">
+      <address class="address header__address">
         <a class="link" href="tel:+75555555555">+7 555 555-55-55</a>
-        <ul class="social-media header__social-media">
-          <li class="item">
+        <ul class="list social-media header__social-media">
+          <li>
             <a class="link" href="https://t.me" target="_blank">
-              <svg class="icon icon__contact">
+              <svg class="icon social-media__icon">
                 <use href="./assets/svg/sprite.svg#telegram"></use>
               </svg>
             </a>
           </li>
-          <li class="item">
+          <li>
             <a class="link" href="https://www.viber.com/ru/" target="_blank">
-              <svg class="icon icon__contact">
+              <svg class="icon social-media__icon">
                 <use href="./assets/svg/sprite.svg#viber"></use>
               </svg>
             </a>
           </li>
-          <li class="item">
+          <li>
             <a class="link" href="https://api.whatsapp.com" target="_blank">
-              <svg class="icon icon__contact">
+              <svg class="icon social-media__icon">
                 <use href="./assets/svg/sprite.svg#whatsapp"></use>
               </svg>
             </a>
@@ -59,105 +59,107 @@
   <main class="main">
     <div class="container">
       <section class="consultation">
-        <div>
-          <h1 class="title--primary">Зарабатывайте больше <span class="gradient">с WELBEX</span></h1>
-          <p>Развиваем и контролируем продажи за вас</p>
+        <div class="consultation__header">
+          <h1 class="title--primary">Зарабатывайте больше
+            <span class="gradient-text text--bold">с WELBEX</span>
+          </h1>
+          <p class="consultation__header-paragraph">Развиваем и контролируем продажи за вас</p>
         </div>
         <div class="consultation__gifts">
-          <p>Вместе с <span class="gradient">бесплатной консультацией</span> мы дарим:</p>
-            <ul class="consultation__gifts-list">
-              <li class="item">
-                <span class="consultation__gift">Виджеты</span>
-                30 готовых решений
+          <p class="consultation__gifts-paragraph">Вместе с <span class="gradient-text text--uppercase">бесплатной консультацией</span> мы дарим:</p>
+            <ul class="list consultation__gift-list">
+              <li>
+                <span class="text--uppercase">Виджеты</span>
+                <span class="consultation__gift-description">30 готовых решений</span>
               </li>
-              <li class="item">
-                <span class="consultation__gift">Dashboard</span>
-                с показателями вашего бизнеса
+              <li>
+                <span class="text--uppercase">Skype Аудит</span>
+                <span class="consultation__gift-description">отдела продаж и CRM системы</span>
               </li>
-              <li class="item">
-                <span class="consultation__gift">Skype Аудит</span>
-                отдела продаж и CRM системы
+              <li>
+                <span class="text--uppercase">Dashboard</span>
+                <span class="consultation__gift-description">с показателями вашего бизнеса</span>
               </li>
-              <li class="item">
-                <span class="consultation__gift">35 дней</span>
-                использования CRM
+              <li>
+                <span class="text--uppercase">35 дней</span>
+                <span class="consultation__gift-description">использования CRM</span>
               </li>
             </ul>
+            <button class="btn">Получить консультацию</button>
         </div>
-        <button class="consultation__btn">Получить консультацию</button>
       </section>
     </div>
   </main>
   <footer class="footer">
-    <div class="container">
-      <section>
-        <h3 class="title__h3">О компании</h3>
-        <ul>
-          <li class="item">
-            <a class="link" href="#">Партнёрская программа</a>
+    <div class="container footer__container">
+      <div>
+        <span class="footer__name text--uppercase">О компании</span>
+        <ul class="list footer__list">
+          <li>
+            <a class="link footer__link" href="#">Партнёрская программа</a>
           </li>
-          <li class="item">
-            <a class="link" href="#">Вакансии</a>
-          </li>
-        </ul>
-      </section>
-      <section>
-        <h3 class="title__h3">Меню</h3>
-        <ul>
-          <li class="item">
-            <a class="link" href="#">Расчёт стоимости</a>
-          </li>
-          <li class="item">
-            <a class="link" href="#">Услуги</a>
-          </li>
-          <li class="item">
-            <a class="link" href="#">Виджеты</a>
-          </li>
-          <li class="item">
-            <a class="link" href="#">Интеграции</a>
-          </li>
-          <li class="item">
-            <a class="link" href="#">Наши клиенты</a>
-          </li>
-          <li class="item">
-            <a class="link" href="#">Кейсы</a>
-          </li>
-          <li class="item">
-            <a class="link" href="#">Благодарственные письма</a>
-          </li>
-          <li class="item">
-            <a class="link" href="#">Сертификаты</a>
-          </li>
-          <li class="item">
-            <a class="link" href="#">Блог на Youtube</a>
-          </li>
-          <li class="item">
-            <a class="link" href="#">Вопрос / Ответ</a>
+          <li>
+            <a class="link footer__link" href="#">Вакансии</a>
           </li>
         </ul>
-      </section>
-      <section class="contacts">
-        <h3 class="title__h3">Контакты</h3>
-        <address class="address">
+      </div>
+      <div>
+        <span class="footer__name text--uppercase">Меню</span>
+        <ul class="list footer__menu-list">
+          <li>
+            <a class="link footer__link" href="#">Расчёт стоимости</a>
+          </li>
+          <li>
+            <a class="link footer__link" href="#">Кейсы</a>
+          </li>
+          <li>
+            <a class="link footer__link" href="#">Услуги</a>
+          </li>
+          <li>
+            <a class="link footer__link" href="#">Благодарственные письма</a>
+          </li>
+          <li>
+            <a class="link footer__link" href="#">Виджеты</a>
+          </li>
+          <li>
+            <a class="link footer__link" href="#">Сертификаты</a>
+          </li>
+          <li>
+            <a class="link footer__link" href="#">Интеграции</a>
+          </li>
+          <li>
+            <a class="link footer__link" href="#">Блог на Youtube</a>
+          </li>
+          <li>
+            <a class="link footer__link" href="#">Наши клиенты</a>
+          </li>
+          <li>
+            <a class="link footer__link" href="#">Вопрос / Ответ</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__contacts">
+        <span class="footer__name text--uppercase">Контакты</span>
+        <address class="address footer__address">
           <a class="link" href="tel:+75555555555">+7 555 555-55-55</a>
-          <ul class="social-media footer__social-media">
-            <li class="item">
+          <ul class="list social-media footer__social-media">
+            <li>
               <a class="link" href="https://t.me" target="_blank">
-                <svg class="icon icon__contact">
+                <svg class="icon social-media__icon">
                   <use href="./assets/svg/sprite.svg#telegram"></use>
                 </svg>
               </a>
             </li>
-            <li class="item">
+            <li>
               <a class="link" href="https://www.viber.com/ru/" target="_blank">
-                <svg class="icon icon__contact">
+                <svg class="icon social-media__icon">
                   <use href="./assets/svg/sprite.svg#viber"></use>
                 </svg>
               </a>
             </li>
-            <li class="item">
+            <li>
               <a class="link" href="https://api.whatsapp.com" target="_blank">
-                <svg class="icon icon__contact">
+                <svg class="icon social-media__icon">
                   <use href="./assets/svg/sprite.svg#whatsapp"></use>
                 </svg>
               </a>
@@ -165,11 +167,11 @@
           </ul>
           Москва, Путевой проезд 3c1, к 902
         </address>
-      </section>
-      <section class="privacy-policy">
+      </div>
+      <div class="privacy-policy">
         ©WELBEX 2022. Все права защищены.
-        <a class="privacy-policy__link" href="#">Политика конфиденциальности</a>
-      </section>
+        <a class="link privacy-policy__link" href="#">Политика конфиденциальности</a>
+      </div>
     </div>
   </footer>
 </body>

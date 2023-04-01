@@ -4,9 +4,39 @@
   margin: 0;
   padding: 0;
 
-  box-sizing: inherit;
+  box-sizing: border-box;
 }
 
 html {
-  scroll-behavior: smooth; 
+  font-size: 10px;
+  scroll-behavior: smooth;
+  background-color: $main-background; 
+}
+
+.list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.link {
+  display: block;
+  color: $main-text;
+  text-decoration: none;
+
+  transition: $transition;
+
+  &:hover {
+    color: $hover-main-color;
+  }
+
+  &:hover .icon {
+    fill: $hover-main-color;
+  }
+}
+
+.icon {
+  fill: $main-text;
+
+  transition: $transition;
 }
