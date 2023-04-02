@@ -1,10 +1,18 @@
 .footer {
   padding: 55px 0 20px;
   
+  @include small-tablet {
+    padding: 45px 0 60px;
+  }
+
   &__container {
     display: flex;
     flex-wrap: wrap;
     row-gap: 33px;
+
+    @include big-desktop {
+      row-gap: 30px;
+    }
   }
 
   &__name {
@@ -15,6 +23,10 @@
     font-size: 1.4rem;
     font-weight: 700;
     line-height: 1.21;
+
+    @include small-tablet {
+      font-size: 1.2rem;
+    }
   }
   
   &__list {
@@ -29,11 +41,39 @@
     grid-template-columns: repeat(2, auto);
     column-gap: 52px;
     row-gap: 10px;
+
+    .gratitude {
+      @include small-tablet {
+        display: none;
+      }
+    }
+
+    .case {
+      @include small-tablet {
+        grid-column: 2;
+        grid-row: 2;
+      }
+    }
+
+    .hidden {
+      @include small-tablet {
+        display: block;
+        grid-column: 2;
+        grid-row: 1;
+      }
+    }
   }
 
   &__contacts {
     margin-left: auto;
     text-align: right;
+
+    @include big-desktop {
+      margin-left: 0;
+      width: 100%;
+
+      text-align: left;
+    }
   }
 
   &__address {
@@ -45,6 +85,10 @@
   &__social-media {
     gap: 10px;
     justify-content: flex-end;
+
+    @include big-desktop {
+      justify-content: flex-start;
+    }
   }
 
   .privacy-policy {
@@ -57,6 +101,10 @@
     &__link {
       margin-top: 5px;
       text-decoration: underline;
+    }
+
+    @include big-desktop {
+      text-align: left;
     }
   }
 }

@@ -1,4 +1,5 @@
 @import "./abstract/variables";
+@import "./abstract/mixins";
 
 @import "./vendors/normalize";
 
@@ -7,7 +8,6 @@
 @import "./base/typography";
 @import "./base/helpers";
 
-@import "./components/circle";
 @import "./components/logo";
 @import "./components/social-media";
 @import "./components/button";

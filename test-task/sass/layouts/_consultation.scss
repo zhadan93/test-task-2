@@ -2,6 +2,11 @@
   display: flex;
   justify-content: space-between;
 
+  @include small-tablet {
+    flex-direction: column;
+    row-gap: 45px;
+  }
+
   &__primary-title {
     margin-bottom: 30px;
   }
@@ -16,6 +21,11 @@
     margin-top: 15px;
     max-width: 300px;
     text-align: right;
+
+    @include small-tablet {
+      text-align: left;
+      margin-top: 0;
+    }
   }
 
   &__gift {
@@ -24,6 +34,10 @@
 
     font-size: 1.8rem;
     font-weight: 500;
+
+    @include small-tablet {
+      display: none;
+    }
   }
 
   &__gifts-paragraph {
@@ -31,6 +45,10 @@
 
     font-size: 1.8rem;
     font-weight: 700;
+
+    @include small-tablet {
+      margin-bottom: 20px;
+    }
   }
 
   &__gift-list {
@@ -38,9 +56,46 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 30px;
     margin-bottom: 61px;
+
+    @include small-tablet {
+      grid-template-columns: repeat(2, auto);
+      gap: 10px;
+      margin-bottom: 55px;
+    }
+
+    .hidden {
+      @include small-tablet {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+
+        font-size: 1.45rem;
+
+        &::before {
+          content: "";
+          width: 10px;
+          height: 1px;
+          background: $gradient;
+        }
+      }
+
+      @include middle-mobile {
+        font-size: 1.3rem;
+      }
+    }
   }
 
   &__gift-description {
     font-family: $secondary-font;
+
+    @include small-tablet {
+      display: none;
+    }
+  }
+
+  &__btn {
+    @include small-tablet {
+      display: none;
+    }
   }
 }
