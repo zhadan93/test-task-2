@@ -1,0 +1,76 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 46px 0;
+  z-index: 2;
+
+  background-color: $header-color;
+
+  @include big-desktop {
+    padding: 3.8vw 0;
+  }
+
+  @include small-tablet {
+    padding: 29px 0;
+  }
+
+  @include middle-mobile {
+    padding-top: 20px;
+  }
+
+  &__container {
+    display: flex;
+    padding-top: 15px;
+
+    @include small-tablet {
+      padding-top: 0px;
+    }
+  }
+
+  &__logo {
+    margin-top: -4px;
+    margin-right: 52px;
+
+    @include small-tablet {
+      display: none;
+    }
+  }
+
+  .nav {
+    &__list {
+      display: flex;
+      gap: 30px;
+
+      @include small-tablet {
+        text-transform: uppercase;
+
+        li:last-child {
+          display: none;
+        }
+      }
+
+      @include middle-mobile {
+        gap: 16px;
+        font-size: 1.2rem;
+      }
+    }
+  }
+
+  &__address {
+    display: flex;
+    gap: 47px;
+    margin-left: auto;
+
+    @include big-tablet {
+      display: none;
+    }
+  }
+
+  &__social-media {
+    @include big-desktop {
+      display: none;
+    }
+  }
+}

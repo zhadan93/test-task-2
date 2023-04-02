@@ -1,0 +1,59 @@
+*,
+*::before,
+*::after,
+h1 {
+  margin: 0;
+  padding: 0;
+
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+  scroll-behavior: smooth;
+}
+
+.page {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 1fr auto;
+  min-height: 100vh;
+
+  background-color: $main-background;
+}
+
+.list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.link {
+  display: block;
+  color: $main-text;
+  text-decoration: none;
+
+  transition: $transition;
+
+  &:hover {
+    color: $hover-main-color;
+  }
+
+  &:hover .icon {
+    fill: $hover-main-color;
+  }
+
+  &--middle {
+    font-weight: 500;
+  }
+}
+
+.icon {
+  fill: $main-text;
+
+  transition: $transition;
+}
+
+.address {
+  font-style: normal;
+}

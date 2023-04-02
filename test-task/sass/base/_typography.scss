@@ -1,0 +1,50 @@
+.page {
+  font-family: $main-font;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.21;
+  color: $main-text;
+
+  @include small-tablet {
+    font-size: 1.4rem;
+  }
+}
+
+.title {
+  &--primary {
+    font-size: 4.8rem;
+    font-weight: 400;
+    white-space: pre-line;
+    max-width: 362px;
+
+    @include small-tablet {
+      font-size: 4.2rem;
+    }
+
+    @include middle-mobile {
+      font-size: 3.6rem;
+    }
+  }
+}
+
+.text {
+  &--middle {
+    font-weight: 700;
+  }
+
+  &--bold {
+    font-weight: 900;
+  }
+
+  &--uppercase {
+    text-transform: uppercase;
+    letter-spacing: 0.05em
+  }
+}
+
+.gradient-text {
+  background: $gradient;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}

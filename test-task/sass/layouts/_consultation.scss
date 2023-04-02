@@ -1,0 +1,101 @@
+.consultation {
+  display: flex;
+  justify-content: space-between;
+
+  @include small-tablet {
+    flex-direction: column;
+    row-gap: 45px;
+  }
+
+  &__primary-title {
+    margin-bottom: 30px;
+  }
+
+  &__header-paragraph {
+    max-width: 275px;
+    font-family: $secondary-font;
+    font-size: 1.8rem;
+  }
+
+  &__gifts {
+    margin-top: 15px;
+    max-width: 310px;
+    text-align: right;
+
+    @include small-tablet {
+      text-align: left;
+      margin-top: 0;
+    }
+  }
+
+  &__gift {
+    display: block;
+    margin-bottom: 6px;
+
+    font-size: 1.8rem;
+    font-weight: 500;
+
+    @include small-tablet {
+      display: none;
+    }
+  }
+
+  &__gifts-paragraph {
+    margin-bottom: 40px;
+
+    font-size: 1.8rem;
+    font-weight: 700;
+
+    @include small-tablet {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__gift-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    margin-bottom: 61px;
+
+    @include small-tablet {
+      grid-template-columns: repeat(2, auto);
+      gap: 10px;
+      margin-bottom: 0px;
+    }
+
+    .hidden {
+      @include small-tablet {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+
+        font-size: 1.45rem;
+
+        &::before {
+          content: "";
+          width: 10px;
+          height: 1px;
+          background: $gradient;
+        }
+      }
+
+      @include middle-mobile {
+        font-size: 1.3rem;
+      }
+    }
+  }
+
+  &__gift-description {
+    font-family: $secondary-font;
+
+    @include small-tablet {
+      display: none;
+    }
+  }
+
+  &__btn {
+    @include small-tablet {
+      display: none;
+    }
+  }
+}
