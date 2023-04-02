@@ -417,7 +417,6 @@ html {
 
 .gradient-text {
   background: linear-gradient(92deg, #fcb045 27.14%, #ff3f78 121.36%), #e4e5ea;
-  background: -webkit-gradient(92deg, #fcb045 27.14%, #ff3f78 121.36%), #e4e5ea;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -478,6 +477,96 @@ html {
   background-color: #5084ff;
 }
 
+.circle {
+  position: absolute;
+  display: block;
+  z-index: -1;
+  border-radius: 100%;
+}
+.circle--purple {
+  width: 60px;
+  height: 60px;
+  left: 718px;
+  top: -2px;
+  background: radial-gradient(64% 64% at 27.25% 26.5%, rgba(236, 208, 255, 0.64) 0%, rgba(161, 93, 207, 0.24) 59.67%, rgba(118, 49, 164, 0.208) 78.59%, rgba(86, 24, 128, 0.232) 100%);
+  box-shadow: 3px 6px 27px -10px rgba(177, 118, 217, 0.25);
+  filter: blur(5px);
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
+}
+@media (max-width: 1200px) {
+  .circle--purple {
+    left: 62.2vw;
+  }
+}
+@media (max-width: 767px) {
+  .circle--purple {
+    top: 60%;
+    left: auto;
+    right: -20px;
+    width: 50px;
+    height: 50px;
+  }
+}
+@media (max-width: 480px) {
+  .circle--purple {
+    width: 40px;
+    height: 40px;
+  }
+}
+.circle--red {
+  width: 83px;
+  height: 83px;
+  left: 369px;
+  top: 83px;
+  background: radial-gradient(64% 64% at 27.25% 26.5%, rgba(255, 208, 208, 0.536) 0%, rgba(212, 93, 93, 0.264) 59.67%, rgba(167, 49, 49, 0.248) 78.59%, rgba(130, 25, 25, 0.248) 100%);
+  box-shadow: 3px 6px 27px -10px rgba(223, 125, 125, 0.25);
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
+}
+@media (max-width: 1200px) {
+  .circle--red {
+    left: 33.3vw;
+  }
+}
+@media (max-width: 767px) {
+  .circle--red {
+    top: auto;
+    left: 30px;
+    bottom: -3px;
+    width: 50px;
+    height: 50px;
+  }
+}
+@media (max-width: 480px) {
+  .circle--red {
+    width: 40px;
+    height: 40px;
+  }
+}
+.circle--small-red {
+  width: 28px;
+  height: 28px;
+  left: 701px;
+  top: 547px;
+  background: radial-gradient(64% 64% at 27.25% 26.5%, rgba(255, 208, 208, 0.48) 0%, rgba(212, 93, 93, 0.248) 59.67%, rgba(167, 49, 49, 0.264) 78.59%, rgba(130, 25, 25, 0.232) 100%);
+  box-shadow: 3px 6px 27px -10px rgba(223, 125, 125, 0.25);
+  filter: blur(2.5px);
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
+}
+@media (max-width: 1200px) {
+  .circle--small-red {
+    top: 46vw;
+    left: 61vw;
+  }
+}
+@media (max-width: 767px) {
+  .circle--small-red {
+    display: none;
+  }
+}
+
 .header {
   position: fixed;
   top: 0;
@@ -485,7 +574,7 @@ html {
   right: 0;
   padding: 46px 0;
   z-index: 2;
-  background-color: rgba(14, 16, 20, 0.8);
+  background-color: rgba(14, 16, 20, 0.5);
 }
 @media (max-width: 1200px) {
   .header {
@@ -557,7 +646,9 @@ html {
 .main__container {
   position: relative;
   padding-top: 209px;
+  padding-bottom: 69px;
   height: 100%;
+  overflow: hidden;
 }
 @media (max-width: 1200px) {
   .main__container {
@@ -567,6 +658,21 @@ html {
 @media (max-width: 767px) {
   .main__container {
     padding-top: 115px;
+    padding-bottom: 55px;
+  }
+  .main__container::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url("./assets/img/noise.png"), radial-gradient(238.53% 189.02% at 3.2% 3.49%, rgba(255, 246, 233, 0.1) 0%, rgba(26, 29, 35, 0.1) 26.62%, rgba(26, 29, 35, 0.1) 52.1%, rgba(26, 29, 35, 0.01) 70.17%, rgba(26, 29, 35, 0) 100%);
+    background-size: auto;
+    background-repeat: repeat;
+    -webkit-backdrop-filter: blur(7.5px);
+            backdrop-filter: blur(7.5px);
   }
 }
 @media (max-width: 480px) {
@@ -595,7 +701,7 @@ html {
 }
 .consultation__gifts {
   margin-top: 15px;
-  max-width: 300px;
+  max-width: 310px;
   text-align: right;
 }
 @media (max-width: 767px) {
@@ -635,7 +741,7 @@ html {
   .consultation__gift-list {
     grid-template-columns: repeat(2, auto);
     gap: 10px;
-    margin-bottom: 55px;
+    margin-bottom: 0px;
   }
 }
 @media (max-width: 767px) {

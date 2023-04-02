@@ -2,7 +2,10 @@
   &__container {
     position: relative;
     padding-top: 209px;
+    padding-bottom: 69px;
     height: 100%;
+
+    overflow: hidden;
 
     @include big-desktop {
       padding-top: 17.41vw;
@@ -10,6 +13,21 @@
 
     @include small-tablet {
       padding-top: 115px;
+      padding-bottom: 55px;
+
+      &::after {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: url("./assets/img/noise.png"), radial-gradient(238.53% 189.02% at 3.2% 3.49%, rgba(255, 246, 233, 0.1) 0%, rgba(26, 29, 35, 0.1) 26.62%, rgba(26, 29, 35, 0.1) 52.1%, rgba(26, 29, 35, 0.01) 70.17%, rgba(26, 29, 35, 0) 100%);
+        background-size: auto;
+        background-repeat: repeat;
+        backdrop-filter: blur(7.5px);
+      }
     }
 
     @include middle-mobile {

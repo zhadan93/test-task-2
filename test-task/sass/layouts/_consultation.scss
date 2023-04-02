@@ -19,7 +19,7 @@
 
   &__gifts {
     margin-top: 15px;
-    max-width: 300px;
+    max-width: 310px;
     text-align: right;
 
     @include small-tablet {
@@ -60,7 +60,7 @@
     @include small-tablet {
       grid-template-columns: repeat(2, auto);
       gap: 10px;
-      margin-bottom: 55px;
+      margin-bottom: 0px;
     }
 
     .hidden {
